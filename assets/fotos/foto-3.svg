@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 700">
+  <rect width="900" height="700" fill="#3c1727"/>
+  <circle cx="450" cy="310" r="190" fill="#fff7f8" opacity=".09"/>
+  <path d="M450 212c-45-38-112-6-112 53 0 75 112 127 112 127s112-52 112-127c0-59-67-91-112-53z" fill="#f1bf70"/>
+  <text x="450" y="585" text-anchor="middle" font-family="Segoe UI, Arial" font-size="40" font-weight="800" fill="#fff8fa">Un dia para sonreir</text>
+</svg>
