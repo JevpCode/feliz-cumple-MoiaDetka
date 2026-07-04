@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 700">
-  <rect width="900" height="700" fill="#f6ccd7"/>
-  <path d="M0 470c126-78 232-88 318-30 111 75 210 76 316 3 82-56 170-52 266 13v244H0z" fill="#8d274b" opacity=".82"/>
-  <circle cx="688" cy="152" r="86" fill="#d7a94d"/>
-  <text x="450" y="610" text-anchor="middle" font-family="Segoe UI, Arial" font-size="40" font-weight="800" fill="#fff8fa">Otro momento bonito</text>
+  <rect width="900" height="700" fill="#ffd95d"/>
+  <path d="M0 470c126-78 232-88 318-30 111 75 210 76 316 3 82-56 170-52 266 13v244H0z" fill="#15130f" opacity=".9"/>
+  <circle cx="688" cy="152" r="86" fill="#fff8dc"/>
+  <text x="450" y="610" text-anchor="middle" font-family="Segoe UI, Arial" font-size="40" font-weight="800" fill="#fff8dc">Otro momento bonito</text>
 </svg>

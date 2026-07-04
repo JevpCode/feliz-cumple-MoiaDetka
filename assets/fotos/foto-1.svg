@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 700">
-  <rect width="900" height="700" fill="#f7d9e1"/>
-  <circle cx="220" cy="160" r="120" fill="#d7a94d" opacity=".22"/>
-  <path d="M450 260c-62-54-158-8-158 74 0 105 158 178 158 178s158-73 158-178c0-82-96-128-158-74z" fill="#c94f72"/>
-  <text x="450" y="610" text-anchor="middle" font-family="Segoe UI, Arial" font-size="42" font-weight="800" fill="#3c1727">Nuestro recuerdo favorito</text>
+  <rect width="900" height="700" fill="#fff8dc"/>
+  <circle cx="220" cy="160" r="120" fill="#f3b700" opacity=".28"/>
+  <path d="M450 260c-62-54-158-8-158 74 0 105 158 178 158 178s158-73 158-178c0-82-96-128-158-74z" fill="#15130f"/>
+  <text x="450" y="610" text-anchor="middle" font-family="Segoe UI, Arial" font-size="42" font-weight="800" fill="#15130f">Nuestro recuerdo favorito</text>
 </svg>

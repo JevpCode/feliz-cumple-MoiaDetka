@@ -1,9 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 700">
-  <rect width="900" height="700" fill="#fff8fa"/>
-  <g fill="#c94f72">
+  <rect width="900" height="700" fill="#fff8dc"/>
+  <g fill="#15130f">
     <circle cx="310" cy="260" r="70"/>
     <circle cx="590" cy="260" r="70"/>
-    <path d="M244 300c38 116 128 180 206 180s168-64 206-180" fill="none" stroke="#c94f72" stroke-width="42" stroke-linecap="round"/>
+    <path d="M244 300c38 116 128 180 206 180s168-64 206-180" fill="none" stroke="#15130f" stroke-width="42" stroke-linecap="round"/>
   </g>
-  <text x="450" y="610" text-anchor="middle" font-family="Segoe UI, Arial" font-size="40" font-weight="800" fill="#3c1727">Tu sonrisa</text>
+  <text x="450" y="610" text-anchor="middle" font-family="Segoe UI, Arial" font-size="40" font-weight="800" fill="#15130f">Tu sonrisa</text>
 </svg>

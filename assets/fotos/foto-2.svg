@@ -1,8 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 700">
-  <rect width="900" height="700" fill="#fff7f8"/>
-  <rect x="150" y="115" width="600" height="390" rx="42" fill="#f8dfe5"/>
-  <circle cx="338" cy="276" r="88" fill="#8d274b"/>
-  <circle cx="548" cy="276" r="88" fill="#c94f72"/>
-  <path d="M216 505c70-96 139-144 208-144 77 0 148 58 260 144z" fill="#2e7188" opacity=".72"/>
-  <text x="450" y="610" text-anchor="middle" font-family="Segoe UI, Arial" font-size="40" font-weight="800" fill="#3c1727">Una foto juntos</text>
+  <rect width="900" height="700" fill="#fff8dc"/>
+  <rect x="150" y="115" width="600" height="390" rx="42" fill="#ffd95d"/>
+  <circle cx="338" cy="276" r="88" fill="#15130f"/>
+  <circle cx="548" cy="276" r="88" fill="#3a3323"/>
+  <path d="M216 505c70-96 139-144 208-144 77 0 148 58 260 144z" fill="#f3b700" opacity=".82"/>
+  <text x="450" y="610" text-anchor="middle" font-family="Segoe UI, Arial" font-size="40" font-weight="800" fill="#15130f">Una foto juntos</text>
 </svg>
