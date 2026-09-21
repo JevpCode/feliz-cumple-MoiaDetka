@@ -45,6 +45,43 @@ body {
   font-family: "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, Arial, sans-serif;
 }
 
+.entry-music {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  display: grid;
+  grid-template-columns: minmax(180px, 0.7fr) minmax(260px, 1fr);
+  gap: 16px;
+  align-items: center;
+  padding: 12px clamp(14px, 4vw, 38px);
+  background: rgba(21, 19, 15, 0.94);
+  color: #fff8dc;
+  box-shadow: 0 14px 30px rgba(17, 16, 13, 0.22);
+  backdrop-filter: blur(10px);
+}
+
+.entry-music__text {
+  display: grid;
+  gap: 2px;
+}
+
+.entry-music__text span {
+  color: #ffd95d;
+  font-size: 0.76rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.entry-music__text strong {
+  font-size: clamp(0.95rem, 2vw, 1.1rem);
+}
+
+.entry-music iframe {
+  display: block;
+  border: 0;
+  border-radius: 12px;
+}
+
 main {
   overflow: hidden;
 }
@@ -299,6 +336,282 @@ h1 {
   transform: scale(1.01);
 }
 
+.flower-vase-section {
+  padding: clamp(48px, 8vw, 100px) clamp(20px, 6vw, 76px);
+  background:
+    radial-gradient(circle at 18% 20%, rgba(243, 183, 0, 0.22), transparent 34%),
+    linear-gradient(180deg, #ffd95d, #fffaf0 100%);
+}
+
+.vase-gift {
+  position: relative;
+  display: grid;
+  justify-items: center;
+  align-items: end;
+  width: min(100%, 520px);
+  min-height: 520px;
+  margin: 0 auto;
+  padding: 34px 24px;
+  border: 1px solid rgba(17, 16, 13, 0.12);
+  border-radius: 8px;
+  background:
+    radial-gradient(circle at 50% 22%, rgba(255, 248, 220, 0.74), transparent 34%),
+    rgba(255, 253, 242, 0.72);
+  color: var(--ink);
+  text-decoration: none;
+  box-shadow: var(--shadow);
+  transition: transform 160ms ease, box-shadow 160ms ease;
+}
+
+.vase-gift:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 30px 76px rgba(17, 16, 13, 0.28);
+}
+
+.vase-gift__flower {
+  position: relative;
+  width: 220px;
+  height: 330px;
+  z-index: 2;
+}
+
+.sunflower-head {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 138px;
+  height: 138px;
+  border-radius: 50%;
+  background:
+    radial-gradient(circle, #f3b700 0 30%, transparent 31%),
+    repeating-conic-gradient(from 9deg, #ffd95d 0 9deg, #f3b700 9deg 18deg);
+  transform: translateX(-50%);
+  box-shadow: 0 18px 32px rgba(17, 16, 13, 0.18);
+}
+
+.sunflower-center {
+  position: absolute;
+  inset: 43px;
+  border-radius: 50%;
+  background:
+    radial-gradient(circle at 36% 34%, #6f5200, #15130f 70%);
+}
+
+.sunflower-stem {
+  position: absolute;
+  left: 50%;
+  top: 122px;
+  width: 12px;
+  height: 230px;
+  border-radius: 999px;
+  background: linear-gradient(180deg, #355b2d, #203c22);
+  transform: translateX(-50%);
+}
+
+.sunflower-leaf {
+  position: absolute;
+  top: 208px;
+  width: 82px;
+  height: 42px;
+  border-radius: 100% 0 100% 0;
+  background: #4f7d3a;
+}
+
+.sunflower-leaf--left {
+  left: 42px;
+  transform: rotate(-26deg);
+}
+
+.sunflower-leaf--right {
+  right: 42px;
+  transform: rotate(206deg);
+}
+
+.vase-gift__vase {
+  position: absolute;
+  bottom: 72px;
+  width: 220px;
+  height: 180px;
+  border-radius: 42px 42px 70px 70px;
+  background:
+    linear-gradient(90deg, rgba(255, 248, 220, 0.72), rgba(255, 248, 220, 0.22), rgba(255, 248, 220, 0.66)),
+    linear-gradient(180deg, rgba(255, 217, 93, 0.42), rgba(21, 19, 15, 0.1));
+  border: 3px solid rgba(17, 16, 13, 0.2);
+  box-shadow: inset 0 0 28px rgba(255, 248, 220, 0.42), 0 20px 38px rgba(17, 16, 13, 0.16);
+  z-index: 3;
+}
+
+.vase-gift__label {
+  position: relative;
+  z-index: 4;
+  margin-top: 18px;
+  padding: 13px 18px;
+  border-radius: 999px;
+  background: var(--wine);
+  color: #fff8dc;
+  font-weight: 900;
+  text-align: center;
+}
+
+.bouquet-page {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: clamp(28px, 6vw, 76px);
+  background:
+    radial-gradient(circle at 50% 18%, rgba(255, 217, 93, 0.34), transparent 34%),
+    linear-gradient(145deg, #fff8dc, #ffd95d);
+}
+
+.bouquet-card {
+  width: min(100%, 940px);
+  padding: clamp(24px, 5vw, 52px);
+  border: 1px solid rgba(17, 16, 13, 0.12);
+  border-radius: 8px;
+  background: rgba(255, 253, 242, 0.82);
+  box-shadow: var(--shadow);
+  text-align: center;
+}
+
+.bouquet-card h1 {
+  margin: 0;
+  font-size: clamp(3rem, 8vw, 7rem);
+}
+
+.bouquet-card p:not(.eyebrow) {
+  max-width: 680px;
+  margin: 22px auto 0;
+  color: #403720;
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  line-height: 1.75;
+}
+
+.bouquet {
+  position: relative;
+  width: min(100%, 620px);
+  height: 620px;
+  margin: clamp(30px, 5vw, 54px) auto 0;
+}
+
+.bouquet-wrap {
+  position: absolute;
+  left: 50%;
+  bottom: 16px;
+  width: 310px;
+  height: 280px;
+  border-radius: 24px 24px 120px 120px;
+  background:
+    linear-gradient(135deg, rgba(255, 248, 220, 0.9), rgba(255, 217, 93, 0.68)),
+    #fff8dc;
+  border: 2px solid rgba(17, 16, 13, 0.12);
+  transform: translateX(-50%) rotate(45deg);
+  box-shadow: 0 24px 52px rgba(17, 16, 13, 0.2);
+}
+
+.bouquet-flower {
+  position: absolute;
+  left: var(--x);
+  bottom: 104px;
+  width: 86px;
+  height: var(--height);
+  transform: translateX(-50%) rotate(var(--angle));
+  transform-origin: bottom center;
+  animation: bloomIn 1800ms cubic-bezier(0.18, 0.82, 0.22, 1) both;
+  animation-delay: var(--delay);
+}
+
+.flower__stem {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 8px;
+  height: calc(var(--height) - 82px);
+  border-radius: 999px;
+  background: linear-gradient(180deg, #4f7d3a, #203c22);
+  transform: translateX(-50%);
+}
+
+.flower__bloom {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 86px;
+  height: 86px;
+  transform: translateX(-50%) rotate(calc(var(--angle) * -1));
+}
+
+.sunflower .flower__bloom {
+  border-radius: 50%;
+  background:
+    radial-gradient(circle, #f3b700 0 28%, transparent 29%),
+    repeating-conic-gradient(#ffd95d 0 10deg, #f3b700 10deg 20deg);
+}
+
+.sunflower .flower__bloom span {
+  position: absolute;
+  inset: 28px;
+  border-radius: 50%;
+  background: #15130f;
+}
+
+.rose .flower__bloom {
+  border-radius: 50%;
+  background:
+    radial-gradient(circle at 42% 40%, #fff3a8 0 14%, transparent 15%),
+    conic-gradient(from 12deg, #f3b700, #ffe072, #d99b00, #ffd95d, #f3b700);
+}
+
+.rose .flower__bloom span {
+  position: absolute;
+  inset: 18px;
+  border-radius: 44% 56% 46% 54%;
+  border: 8px solid #fff3a8;
+  transform: rotate(22deg);
+}
+
+.lily .flower__bloom {
+  background:
+    radial-gradient(ellipse at 50% 78%, #d99b00 0 7%, transparent 8%),
+    conic-gradient(from 0deg, transparent 0 18deg, #fff3a8 18deg 58deg, transparent 58deg 122deg, #ffd95d 122deg 178deg, transparent 178deg 222deg, #fff3a8 222deg 278deg, transparent 278deg 360deg);
+  border-radius: 50%;
+}
+
+.lily .flower__bloom span {
+  position: absolute;
+  left: 50%;
+  top: 34px;
+  width: 7px;
+  height: 38px;
+  border-radius: 999px;
+  background: #6f5200;
+  transform: translateX(-50%);
+}
+
+.flower--sunflower-1 { --x: 39%; --height: 390px; --angle: -17deg; --delay: 180ms; }
+.flower--sunflower-2 { --x: 50%; --height: 420px; --angle: 0deg; --delay: 420ms; }
+.flower--sunflower-3 { --x: 61%; --height: 390px; --angle: 17deg; --delay: 660ms; }
+.flower--rose-1 { --x: 34%; --height: 330px; --angle: -29deg; --delay: 900ms; }
+.flower--rose-2 { --x: 44%; --height: 350px; --angle: -9deg; --delay: 1140ms; }
+.flower--rose-3 { --x: 56%; --height: 350px; --angle: 9deg; --delay: 1380ms; }
+.flower--rose-4 { --x: 66%; --height: 330px; --angle: 29deg; --delay: 1620ms; }
+.flower--lily-1 { --x: 30%; --height: 300px; --angle: -42deg; --delay: 1860ms; }
+.flower--lily-2 { --x: 70%; --height: 300px; --angle: 42deg; --delay: 2100ms; }
+
+@keyframes bloomIn {
+  from {
+    opacity: 0;
+    transform: translateX(-50%) rotate(var(--angle)) translateY(84px) scale(0.72);
+  }
+  55% {
+    opacity: 1;
+    transform: translateX(-50%) rotate(var(--angle)) translateY(-10px) scale(1.03);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(-50%) rotate(var(--angle)) translateY(0) scale(1);
+  }
+}
+
 .cards-section {
   padding: clamp(48px, 8vw, 100px) clamp(20px, 6vw, 76px);
   background:
@@ -472,6 +785,11 @@ h1 {
 }
 
 @media (max-width: 880px) {
+  .entry-music {
+    position: static;
+    grid-template-columns: 1fr;
+  }
+
   .hero {
     min-height: auto;
     grid-template-columns: 1fr;
@@ -494,6 +812,10 @@ h1 {
 
   .cards-grid {
     grid-template-columns: 1fr;
+  }
+
+  .bouquet {
+    height: 560px;
   }
 }
 
@@ -520,5 +842,46 @@ h1 {
     grid-column: auto;
     grid-row: auto;
     aspect-ratio: 4 / 3;
+  }
+
+  .vase-gift {
+    min-height: 460px;
+  }
+
+  .bouquet {
+    height: 500px;
+  }
+
+  .bouquet-flower {
+    width: 70px;
+  }
+
+  .flower__bloom {
+    width: 70px;
+    height: 70px;
+  }
+
+  .sunflower .flower__bloom span {
+    inset: 23px;
+  }
+
+  .rose .flower__bloom span {
+    inset: 15px;
+    border-width: 7px;
+  }
+
+  .flower--sunflower-1 { --x: 39%; --height: 330px; }
+  .flower--sunflower-2 { --x: 50%; --height: 355px; }
+  .flower--sunflower-3 { --x: 61%; --height: 330px; }
+  .flower--rose-1 { --x: 34%; --height: 285px; }
+  .flower--rose-2 { --x: 44%; --height: 300px; }
+  .flower--rose-3 { --x: 56%; --height: 300px; }
+  .flower--rose-4 { --x: 66%; --height: 285px; }
+  .flower--lily-1 { --x: 30%; --height: 262px; }
+  .flower--lily-2 { --x: 70%; --height: 262px; }
+
+  .bouquet-wrap {
+    width: 240px;
+    height: 230px;
   }
 }
